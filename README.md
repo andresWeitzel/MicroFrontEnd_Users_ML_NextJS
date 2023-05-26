@@ -98,6 +98,11 @@ cd 'projectName'
 cd 'projectName'
 ```
 * Instalamos la última versión LTS de [Nodejs(v18)](https://nodejs.org/en/download)
+* Creamos la app con Next.js con una plantilla base.
+```git
+npx create-next-app@latest MicroFrontEnd_Users_ML_NextJS --use-npm --example "https://github.com/vercel/next-learn/tree/master/basics/learn-starter"
+```
+
 
 
 <br>
@@ -197,8 +202,8 @@ cd 'projectName'
  
  <br>
 
-#### Configuración
-* [Creación react app](https://react.dev/learn)
+#### Documentación
+* [Creación Next.js App](https://nextjs.org/learn/basics/create-nextjs-app/setup)
 
 #### Herramientas 
 * [Convertidor html a jsx](https://transform.tools/html-to-jsx)
