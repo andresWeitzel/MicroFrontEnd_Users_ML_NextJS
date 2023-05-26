@@ -93,14 +93,14 @@ cd 'projectName'
  <br>
  
   
-* Creamos un entorno de trabajo a través de algún ide, luego de crear una carpeta nos posicionamos sobre la misma
+* Creamos un entorno de trabajo a través de algún ide, luego de crear una carpeta nos posicionamos sobre la misma o la abrimos con vsc
 ```git
 cd 'projectName'
 ```
 * Instalamos la última versión LTS de [Nodejs(v18)](https://nodejs.org/en/download)
 * Creamos la app con Next.js con una plantilla base.
 ```git
-npx create-next-app@latest MicroFrontEnd_Users_ML_NextJS --use-npm --example "https://github.com/vercel/next-learn/tree/master/basics/learn-starter"
+npx create-next-app@latest micro_front_end_users_ml_nextjs --use-npm --example "https://github.com/vercel/next-learn/tree/master/basics/learn-starter"
 ```
 
 
