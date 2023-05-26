@@ -53,8 +53,7 @@ Aplicación web para la gestión de usuarios del microservicio mercadolibre user
 
 ### 1.0.0) Descripción General
 
-
- ### 1.0.1) Descripción Arquitectura y Funcionamiento
+### 1.0.1) Descripción Arquitectura y Funcionamiento
  
 
 <br>
