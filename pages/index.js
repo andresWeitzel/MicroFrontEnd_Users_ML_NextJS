@@ -1,16 +1,21 @@
-import HeadComponent from '../components/Head/Head';
-import NavbarComponent from '../components/Navbar/NavbarComponent';
-import styles from '../styles/Home.module.css';
+import NavbarComponent from "../components/Navbar/NavbarComponent";
+import styles from "../styles/Home.module.css";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-
-
-    <NavbarComponent></NavbarComponent>
-
-      <HeadComponent></HeadComponent>
-
+       {/*Start Bootstrap styles*/}
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossOrigin="anonymous"
+      />
+       {/*End Bootstrap styles*/}
+      
+      <NavbarComponent></NavbarComponent>
       <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -50,18 +55,16 @@ export default function Home() {
           </a>
         </div>
       </main>
-
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
       </footer>
-
       <style jsx>{`
         main {
           padding: 5rem 0;
@@ -98,7 +101,6 @@ export default function Home() {
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
       `}</style>
-
       <style jsx global>{`
         html,
         body {
@@ -112,6 +114,13 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
+      {/*Start Bootstrap logic*/}
+      <Script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossOrigin="anonymous"
+      />
+      {/*End Bootstrap logic*/}
     </div>
-  )
+  );
 }

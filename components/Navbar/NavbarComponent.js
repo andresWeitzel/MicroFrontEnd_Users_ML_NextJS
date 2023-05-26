@@ -1,60 +1,75 @@
 import React from "react";
-import { Navbar, Button, Link, Text, Card, Radio } from "@nextui-org/react";
+import { Navbar, Button, Link, Text, Card, Radio, useTheme,  } from "@nextui-org/react";
 import { Layout } from "./Layout.js";
-import { AcmeLogo } from "./AcmeLogo.js";
-import { VariantsSelectorWrapper } from "./VariantsSelectorWrapper.js";
+import { Logo } from "./Logo.js";
 
 export default function NavbarComponent() {
-  const [variant, setVariant] = React.useState("static");
 
-  const variants = ["static", "floating", "sticky"];
-  
+  const [activeColor, setActiveColor] = React.useState("primary");
+
+  const {isDark} = useTheme();
+
+  const variants = [
+    "default",
+    "highlight",
+    "highlight-solid",
+    "underline",
+    "highlight-rounded",
+    "highlight-solid-rounded",
+    "underline-rounded",
+  ];
+
+  const colors = ["primary", "secondary", "success", "warning", "error"];
+
+  const collapseItems = [
+    "Features",
+    "Customers",
+    "Pricing",
+    "Company",
+    "Legal",
+    "Team",
+    "Help & Feedback",
+    "Login",
+    "Sign Up",
+  ];
+
   return (
-    <Layout>
-      <Navbar isBordered variant={variant}>
-        <Navbar.Brand>
-        <AcmeLogo />
+  <Layout>
+      <Navbar isBordered={isDark} variant="sticky">
+        <Navbar.Brand className="p-2">
+     
+          <Logo />
           <Text b color="inherit" hideIn="xs">
-            ACME
+            Users
           </Text>
         </Navbar.Brand>
-        <Navbar.Content hideIn="xs">
-          <Navbar.Link href="#">Features</Navbar.Link>
-          <Navbar.Link isActive href="#">Customers</Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
-        </Navbar.Content>
-        <Navbar.Content>
-          <Navbar.Link color="inherit" href="#">
-            Login
+        <Navbar.Content enableCursorHighlight hideIn="xs" variant="highlight-solid">
+          <Navbar.Link href="#">Inicio</Navbar.Link>
+          <Navbar.Link isActive href="#">
+            Listado
           </Navbar.Link>
-          <Navbar.Item>
-            <Button auto flat as={Link} href="#">
-              Sign Up
-            </Button>
-          </Navbar.Item>
+          <Navbar.Link href="#">Agregar</Navbar.Link>
+          <Navbar.Link href="#">Ayuda</Navbar.Link>
+          <Navbar.Toggle aria-label="toggle navigation" className="ms-4"/>
         </Navbar.Content>
-      </Navbar>
-      <VariantsSelectorWrapper>
-        <Card css={{maxW: "50%"}}>
-          <Card.Body css={{pt: "$8", px: "$8"}}>
-            <Radio.Group
-              defaultValue="default"
-              label="Select variant"
-              orientation="horizontal"
-              size="sm"
-              value={variant}
-              onChange={setVariant}
+        <Navbar.Collapse>
+        {collapseItems.map((item, index) => (
+          <Navbar.CollapseItem key={item}>
+            <Link
+              color="inherit"
+              css={{
+                minWidth: "100%",
+                justifyContent: "end"
+              }}
+              href="#"
             >
-              {variants.map((variant) => (
-                <Radio key={variant} value={variant}>
-                  {variant}
-                </Radio>
-              ))}
-            </Radio.Group>
-          </Card.Body>
-        </Card>
-      </VariantsSelectorWrapper>      
+              {item}
+            </Link>
+          </Navbar.CollapseItem>
+        ))}
+      </Navbar.Collapse>
+      </Navbar>
     </Layout>
   )
 }
+

@@ -231,6 +231,7 @@ npm run dev
 #### Documentación
 * [Creación Next.js App](https://nextjs.org/learn/basics/create-nextjs-app/setup)
 * [ Next-ui components](https://nextui.org/)
+* [Importar bootstrap en Next](https://medium.com/frontendweb/how-to-add-bootstrap-in-next-js-de997371fd9c)
 
 #### Herramientas 
 * [Convertidor html a jsx](https://transform.tools/html-to-jsx)
