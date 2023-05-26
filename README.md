@@ -1,4 +1,4 @@
-# MicroFrontEnd_Users_ML_React
+# MicroFrontEnd_Users_ML_NextJS
 Aplicación web para la gestión de usuarios del microservicio mercadolibre users,
 * [Repositorio Microdb_MercadoLibre_Mysql](https://github.com/andresWeitzel/Microdb_MercadoLibre_Mysql)
 * [Repositorio Api Rest Microservice_Mercadolibre_Users_AWS](https://github.com/andresWeitzel/Microservice_Mercadolibre_Users_AWS)
