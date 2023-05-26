@@ -1,5 +1,5 @@
 # MicroFrontEnd_Users_ML_NextJS
-Aplicación web para la gestión de usuarios del microservicio mercadolibre users,
+Aplicación web para la gestión de usuarios del microservicio mercadolibre users implementada con con ReactJs, Next.js,Next-UI, Html5, Scss, Highcharts, Bootstrap, Git y otras tecnologías.
 * [Repositorio Microdb_MercadoLibre_Mysql](https://github.com/andresWeitzel/Microdb_MercadoLibre_Mysql)
 * [Repositorio Api Rest Microservice_Mercadolibre_Users_AWS](https://github.com/andresWeitzel/Microservice_Mercadolibre_Users_AWS)
 * [Api Doc ML Usuarios](https://developers.mercadolibre.com.ar/es_ar/usuarios-y-aplicaciones)
@@ -125,7 +125,8 @@ git push origin
 ```git
 npm run dev
 ```
-* Ya tenemos una app funcional con una estructura inicil definida por NextJS. La aplicación queda deployada en http://localhost:3001
+* Ya tenemos una app funcional con una estructura inicial definida por NextJS. La aplicación queda deployada en http://localhost:3001
+* `Aclaración` : El resto de las modificaciones aplicadas sobre la plantilla inicial no se describen por temas de simplificación de doc. Para más info consultar el tutorial de [Creación Next.js App](https://nextjs.org/learn/basics/create-nextjs-app/setup) para el uso de componentes, rutas, etc.
 
 
 
@@ -229,9 +230,11 @@ npm run dev
 
 #### Documentación
 * [Creación Next.js App](https://nextjs.org/learn/basics/create-nextjs-app/setup)
+* [ Next-ui components](https://nextui.org/)
 
 #### Herramientas 
 * [Convertidor html a jsx](https://transform.tools/html-to-jsx)
+* [Fondos de pantallas unsplash](https://unsplash.com/it)
 
 
 

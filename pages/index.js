@@ -1,13 +1,15 @@
-import Head from 'next/head';
+import HeadComponent from '../components/Head/Head';
+import NavbarComponent from '../components/Navbar/NavbarComponent';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+
+
+    <NavbarComponent></NavbarComponent>
+
+      <HeadComponent></HeadComponent>
 
       <main>
         <h1 className={styles.title}>
