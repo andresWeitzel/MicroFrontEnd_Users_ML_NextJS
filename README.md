@@ -1,4 +1,4 @@
-# micro_front_end_users_ml_nextjs
+# MicroFrontEnd_Users_ML_NextJS
 Aplicación web para la gestión de usuarios del microservicio mercadolibre users,
 * [Repositorio Microdb_MercadoLibre_Mysql](https://github.com/andresWeitzel/Microdb_MercadoLibre_Mysql)
 * [Repositorio Api Rest Microservice_Mercadolibre_Users_AWS](https://github.com/andresWeitzel/Microservice_Mercadolibre_Users_AWS)
@@ -68,6 +68,7 @@ Aplicación web para la gestión de usuarios del microservicio mercadolibre user
   <summary>Ver</summary>
 <br>
  
+* Instalamos la última versión LTS de [Nodejs(v18)](https://nodejs.org/en/download) 
 * Una vez creado un entorno de trabajo a través de algún ide, clonamos el proyecto
 ```git
 git clone https://github.com/andresWeitzel/Microservice_Mercadolibre_Users_AWS
@@ -76,7 +77,10 @@ git clone https://github.com/andresWeitzel/Microservice_Mercadolibre_Users_AWS
 ```git
 cd 'projectName'
 ```
-* Instalamos la última versión LTS de [Nodejs(v18)](https://nodejs.org/en/download)
+* Instalamos todas las dependencias necesarias
+```git
+npm i
+```
 
 
  
@@ -106,17 +110,22 @@ npx create-next-app@latest micro_front_end_users_ml_nextjs --use-npm --example "
 ```git
 git init
 ```
-* Creamos el repositorio en github (sin readme) y agregamos la url
+* Creamos el repositorio en github (sin readme) y agregamos la url del repositorio creado (ej: la siguiente)
 ```git
 git remote add origin https://github.com/andresWeitzel/MicroFrontEnd_Users_ML_NextJS
 ```
 * Traemos los cambios del remoto, agregamos los nuevos cambios en local, commitiamos y los subimos al repo.
 ```git
-* git pull origin master
-* git add *
-* git commit -m "Create Next.js app"
-* git push origin
+git pull origin master
+git add *
+git commit -m "Create Next.js app"
+git push origin
 ```
+* Ejecutamos la app inicial
+```git
+npm run dev
+```
+* Ya tenemos una app funcional con una estructura inicil definida por NextJS. La aplicación queda deployada en http://localhost:3001
 
 
 
